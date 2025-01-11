@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Example</title>
+</head>
+<body>
+    <form>
+        <label for="age">Age</label>
+        <input type="number" value="provide age"><br>
+        <optgroup label="Occupation">
+            <select>
+                <option value="student">student</option>
+                <option value="teacher">teacher</option>
+                <option value="nothing">nothing</option>
+            </select>
+        </optgroup><br>
+        <button type="button" onclick="redirect()">Click Me!</button>   
+    </form>
+    <button type="button" onclick="window.location.href='https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button3'">Submit</button>
+    <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button3">Click here</a>
+
+    <script>
+        function redirect() {
+            window.location.href = 'https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button3';
+        }
+    </script>
+</body>
+</html>
